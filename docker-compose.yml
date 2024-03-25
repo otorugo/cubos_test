@@ -25,4 +25,4 @@ services:
     restart: always
     image: cubos_frontend
     ports:
-      - 8081:80
+      - 80:80
