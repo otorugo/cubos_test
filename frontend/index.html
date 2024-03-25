@@ -69,7 +69,7 @@
   <button onclick="fetchAPI()">Verificar Backend e Banco</button>
   <script>
     async function fetchAPI() {
-      const result = await fetch("http://localhost:8080/api")
+      const result = await fetch("/api")
         .then(response => response.json())
 
       if (result?.database) {

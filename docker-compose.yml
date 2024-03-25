@@ -26,3 +26,7 @@ services:
     image: cubos_frontend
     ports:
       - 80:80
+
+networks:
+  localnet:
+    driver: bridge
