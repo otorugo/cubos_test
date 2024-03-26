@@ -7,7 +7,7 @@ services:
       - 5432:5432
     volumes:
       - ./sql/script.sql:/docker-entrypoint-initdb.d/script.sql
-      - /tmp/postgres_data:/var/lib/postgresql/data
+      - ./postgresql_data:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
   backend:
